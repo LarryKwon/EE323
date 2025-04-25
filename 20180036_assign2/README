@@ -1,0 +1,6 @@
+1. At first, I had implemented  500 error, but I removed it after the new announcement. 
+if you want to show that error, you can do that by removing comments
+
+2. I implemented the 404 error. when the return value of getaddrinfo(Host,Port,&host_hints,&hostinfo) is null, I close socket to clients and return EXIT_FAILURE. I had implemented this function before the announcement, but I don’t want to remove this function, so I keep it. 
+
+3. when you execute the proxy, the proxy will print the hostname and it’s ip address of where you want to connect. As there is no restriction for proxy’s output, I added this one for check.
